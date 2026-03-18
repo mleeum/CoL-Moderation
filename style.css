@@ -28,11 +28,17 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin: 20vh 35vw;
+    margin: 15% 40%;
     background-color: var(--alt-bg-color);
     border: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 1rem;
     text-align: center;
+}
+
+@media screen and (max-width: 728px) {
+    .login-box {
+        margin: 50% 10%;
+    }
 }
 
 .login-inputs{
@@ -47,7 +53,6 @@ body {
 #login-btn {
     font-weight: 700;
 }
-
 
 button {
     background: var(--bg-color);
