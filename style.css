@@ -1,9 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -23,6 +20,49 @@ html {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+.login-box {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 20vh 35vw;
+    background-color: var(--alt-bg-color);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.login-inputs{
+    text-align: left;
+    padding: 2rem;
+    display: grid;
+}
+
+#password{
+    -webkit-text-security: disc;
+}
+#login-btn {
+    font-weight: 700;
+}
+
+button {
+    background: var(--bg-color);
+    padding: .5rem;
+    border: .2rem solid rgba(255, 255, 255, 0.25);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.25);
+
 }
 
 .header {
@@ -51,7 +91,7 @@ body {
     border-radius: 1rem;
 }
 
-.content input {
+    input {
     background: var(--bg-color);
     padding: .5rem;
     border: .2rem solid rgba(255, 255, 255, 0.25);
@@ -62,7 +102,7 @@ body {
     margin-bottom: 1rem;
 }
 
-input:hover, input:focus {
+input:hover, input:focus, button:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     transform: scale(1.04)
 }
@@ -77,7 +117,7 @@ input:hover, input:focus {
     margin-bottom: 1rem;
 }
 
- .content label{
+label{
     font-size: 1.5rem;
     font-weight: 700;
 }

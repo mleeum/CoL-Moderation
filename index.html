@@ -4,36 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>City of London - Moderation</title>
+    <title>City of London - Log In</title>
 </head>
-
 <body>
+<section class="login-page">
+    <div class="login-box">
+        <h1>City of London <br>Moderation Panel</h1>
 
-    <header>
-        <div class="header">
-            <h1 class="header-title">City of London</h1>
-            <div class="menu-icons">
-                <span class="bi bi-person-circle"></span>
-            </div>
-        </div>
-    </header>
-
-    <div class="content">
-        
-        <div class="inputs">
-            <label for="username">Roblox Username</label>
-            <input type="text" id="username">
-           
-            <label for="">Log Type</label>
-            <select id="logtype" name="Log Type">
-                <option value="" disabled selected>Select a log type</option>
-                <option value="warning">Warning</option>
-                <option value="kick">Kick</option>
-                <option value="ban">Ban</option>
-                <option value="banbolo">Ban BOLO</option>
-            </select>
-
+        <div class="login-inputs">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
+            <button id="login-btn">Log In</button>
         </div>
     </div>
+</section>
 </body>
 </html>
