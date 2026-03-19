@@ -108,6 +108,51 @@ input[type="text"] {
     margin-bottom: 1rem;
 }
 
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--bg-color);
+  margin: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: .2rem solid rgba(255, 255, 255, 0.25);
+  border-radius: .5rem;
+  display:grid;
+  place-content: center;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em rgba(255, 255, 255, 0.65);;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: .5rem;           
+    margin-bottom: 1rem; 
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1rem; 
+    color: rgba(255, 255, 255, 0.65);
+}
+
 input:hover, input:focus, button:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     transform: scale(1.04)
@@ -132,7 +177,5 @@ label{
     display: grid;
     background: var(--alt-bg-color);
     border-radius: .5rem;
-    padding: 1rem;
-    gap: .5rem;
 }
 

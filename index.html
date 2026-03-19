@@ -9,16 +9,19 @@
 <body>
 <section class="login-page">
     <div class="login-box">
-        <h1>City of London <br>Moderation Panel</h1>
+        <h1 id="logintitles">City of London <br>Moderation Panel</h1>
 
         <div class="login-inputs">
             <label for="username">Username</label>
             <input type="text" name="username" id="username">
             <label for="password">Password</label>
             <input type="text" name="password" id="password">
-            <input type="checkbox" name="rememberme" id="remember"></input>
+
             <button id="login-btn">Log In</button>
-            
+                <div class="checkbox-group">
+                <input type="checkbox" name="rememberme" id="remember">
+                <label for="remember"> Remember Me</label>
+            </div>
         </div>
     </div>
 </section>
