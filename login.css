@@ -1,0 +1,32 @@
+.login-box {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 13% 40%;
+    background-color: var(--alt-bg-color);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.login-box img {
+    padding: 2rem 2rem 0.5rem 2rem;
+    height: 5rem;
+}
+@media screen and (max-width: 728px) {
+    .login-box {
+        margin: 50% 10%;
+    }
+}
+
+.login-inputs{
+    text-align: left;
+    padding: 2rem;
+    display: grid;
+}
+
+#password{
+    -webkit-text-security: disc;
+}

@@ -1,0 +1,89 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    background: var(--alt-bg-color);
+    border-bottom: transparent;
+    
+}
+
+.header img{
+    height: 1.3rem;
+    margin: 0 .2rem;
+}
+
+.menu-icons {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    gap: rem;
+
+}
+
+.content { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 3rem 4rem;
+    gap: 1em;
+    height: 85vh;
+}
+
+.col1{
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-box{
+    background-color: var(--alt-bg-color);
+    border: .2rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.grid-boxsp{
+    background-color: var(--alt-bg-color);
+    border: .2rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.log-box{
+    display: grid;
+    align-self: end;
+    height: 4vh;
+}
+ 
+.log-box h1 {
+    margin-bottom: .5rem;
+}
+
+.user-box, .records-box {
+    height: 80vh;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+.user-img img{
+    height: 5.5em;
+    border: .3em solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+}
+
+.content select, option {
+    background: var(--bg-color);
+    border: .2rem solid rgba(255, 255, 255, 0.25);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+    color:rgba(255, 255, 255, 0.3); ;
+    margin-bottom: 1rem;
+}
+
+
+
+
