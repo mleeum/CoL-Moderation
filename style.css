@@ -19,7 +19,7 @@
 
 html {
     font-size: 60%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -33,13 +33,17 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin: 15% 40%;
+    margin: 13% 40%;
     background-color: var(--alt-bg-color);
     border: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 1rem;
     text-align: center;
 }
 
+.login-box img {
+    padding: 2rem 2rem 0.5rem 2rem;
+    height: 5rem;
+}
 @media screen and (max-width: 728px) {
     .login-box {
         margin: 50% 10%;
