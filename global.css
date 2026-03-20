@@ -13,7 +13,7 @@
     --bg-color: #252b3c;
     --text-color: white ;
     --pos-color: #57F287;
-    --neg-color: #ED4245 ;
+    ---color: #ED4245 ;
     --warn-color: #FEE75C ;
 }
 
@@ -38,10 +38,6 @@ button {
     margin-bottom: 1rem;
     cursor: pointer;
     font-weight: 700;
-}
-
-.toggle-true button{
-
 }
 
 button:active {

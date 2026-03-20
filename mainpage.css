@@ -1,3 +1,14 @@
+:root {
+    --alt-bg-color: #101727 ;
+    --bg-color: #252b3c;
+    --text-color: white ;
+    --pos-color: #57F287;
+    --pos-border: hsla(139, 87%, 35%, 0.75);
+    --neg-color: #ED4245 ;
+    --neg-border: hsla(359, 83%, 35%, 0.75);
+    --warn-color: #FEE75C ;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -63,12 +74,12 @@
     height: 80vh;
 }
 
-.user-info {
+.user-info, .staff-info {
     display: flex;
     justify-content: flex-start;
     gap: 1em;
 }
-.user-img img{
+.user-img img, .staff-img img{
     height: 5.5em;
     border: .3em solid rgba(255, 255, 255, 0.25);
     border-radius: 50%;
@@ -84,6 +95,27 @@
     margin-bottom: 1rem;
 }
 
+.staff-btn {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.staff-btn button {
+    width: 20rem;
+}
+
+.togglebtn[aria-pressed=false] {
+    background-color: var(--pos-color);
+    border: .3rem solid var(--pos-border);
+}
+
+.togglebtn[aria-pressed=true] {
+    background-color: var(--neg-color);
+    border: .3rem solid var(--neg-border)   
+}
 
 
 
