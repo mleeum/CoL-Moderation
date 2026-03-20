@@ -6,7 +6,8 @@
     --pos-border: hsla(139, 87%, 35%, 0.75);
     --neg-color: #ED4245 ;
     --neg-border: hsla(359, 83%, 35%, 0.75);
-    --warn-color: #FEE75C ;
+    --warn-color: #ffd65b ;
+    --warn-border: hsla(45, 100%, 35%, 0.75) ;
 }
 
 .header {
@@ -98,7 +99,7 @@
 .staff-btn {
     display: flex;
     align-items: center;
-    place-content: center;
+    justify-content: center;
     margin-top: 1.5rem;
     gap: 1rem;
 }
@@ -107,14 +108,24 @@
     width: 20rem;
 }
 
-.togglebtn[aria-pressed=false] {
+.toggleshift[aria-pressed=false] {
     background-color: var(--pos-color);
     border: .3rem solid var(--pos-border);
 }
 
-.togglebtn[aria-pressed=true] {
+.toggleshift[aria-pressed=true] {
     background-color: var(--neg-color);
     border: .3rem solid var(--neg-border)   
+}
+
+.togglebreak[aria-pressed=false] {
+    background-color: var(--warn-color);
+    border: .3rem solid var(--warn-border);
+}
+
+.togglebreak[aria-pressed=true] {
+    background-color: var(--pos-color);
+    border: .3rem solid var(--pos-border)   
 }
 
 
