@@ -19,7 +19,7 @@
 
 html {
     font-size: 60%;
-    overflow: hidden;
+    
 }
 
 body {
@@ -88,6 +88,11 @@ button:active {
     background: var(--alt-bg-color);
     border-bottom: transparent;
     
+}
+
+.header img{
+    height: 1.3rem;
+    margin: 0 .2rem;
 }
 
 .menu-icons {
@@ -160,25 +165,56 @@ input:hover, input:focus, button:hover {
 }
 
 .content { 
-    display:flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin: 3rem 4rem;
     gap: 1em;
+    height: 85vh;
 }
 
-.content-box{
-    background-color: var(--alt-bg-color);
-    padding: 1rem;
-    display:grid;
-    border: 3px solid rgba(255, 255, 255, 0.4);
-    border-radius: 1rem;
-}
-
-.log-create{
+.col1{
     display: grid;
+    gap: 1rem;
 }
 
-#reason {
-    height: 10rem;
+.grid-box{
+    background-color: var(--alt-bg-color);
+    border: .2rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.grid-boxsp{
+    background-color: var(--alt-bg-color);
+    border: .2rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.log-box{
+    display: grid;
+    align-self: end;
+    height: 4vh;
+}
+ 
+.log-box h1 {
+    margin-bottom: .5rem;
+}
+
+.user-box, .records-box {
+    height: 80vh;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+.user-img img{
+    height: 5.5em;
+    border: .3em solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
 }
 
 .content select, option {
@@ -195,34 +231,7 @@ input:hover, input:focus, button:hover {
 label{
     font-size: 1.5rem;
     font-weight: 700;
+    padding-bottom: .5rem;
 }
 
-#userbox {
-    width: 30vw;
-    height: 80vh;
-}
 
-#logbox {
-    width: 30vw;
-    height: 45vh;
-    display: grid;
-}
-.user-info {
-    display: flex;
-    justify-content: flex-start;
-
-    gap: 1em;
-}
-
-#discbtn{
-    margin-top: .5em;
-    margin-left: 1rem;
-    width: 20rem;
-    justify-content: center;
-    align-items: center;
-}
-.user-img img{
-    height: 5.5em;
-    border: .3em solid rgba(255, 255, 255, 0.25);
-    border-radius: 50%;
-}

@@ -11,55 +11,75 @@
 
     <header>
         <div class="header">
-            <h1 class="header-title">City of London - Moderation Panel</h1>
+            <h1 class="header-title"><img src="https://cdn.col-erlc.ca/files/images/67481c88-65e0-4af4-9c72-b46fa04d3361.svg">
+                Moderation Panel</h1>
             <div class="menu-icons">
                 <span class="bi bi-person-circle"></span>
             </div>
         </div>
     </header>
 
-    <div class="content">
-        
-        <div class="content-box" id="logbox">
-            <h1>Create New Log </h1>
-            <div class="log-create">
+    <section class="content">
+
+        <div class="col1">
+
+            <div class="grid-boxsp">
+
+                <div class="log-box">
+                <h1 class="bi bi-journal-bookmark-fill"> Create New Log</h1>
                 <label for="username">Roblox Username</label>
-                <input type="text" id="username">
-            
-                <label for="">Log Type</label>
-                <select id="logtype" name="Log Type">
-                    <option value="" disabled selected>Select a log type</option>
-                    <option value="warning">Warning</option>
-                    <option value="kick">Kick</option>
-                    <option value="ban">Ban</option>
-                    <option value="banbolo">Ban BOLO</option>
-                </select>
+                    <input type="text" id="username">
+                
+                    <label for="">Log Type</label>
+                    <select id="logtype" name="Log Type">
+                        <option value="" disabled selected>Select a log type</option>
+                        <option value="warning">Warning</option>
+                        <option value="kick">Kick</option>
+                        <option value="ban">Ban</option>
+                        <option value="banbolo">Ban BOLO</option>
+                    </select>
 
-                <label>Reason</label>
-                <input type="text" id="reason">
+                    <label>Reason</label>
+                    <input type="text" id="reason">
 
-                <button>Create Log</button>
+                    <button>Create Log</button>
+                </div>
 
+            </div>
+            <div class="grid-boxsp">
+                <h1 class="bi bi-person-fill"> Hello [user]! </h1>
             </div>
         </div>
 
-        <div class="content-box" id="userbox">
-            <div class="user-info">
-                <div class="user-img">
-                    <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-23154DF78B1C8A1DB7DC3C78FD17DDB4-Png/150/150/AvatarHeadshot/Webp/noFilter">
-                </div>
-                <div class="user-details">
-                    <h1>[username placeholder]</h1>
-                    <h2>ID: [placeholder]</h2>
-                    <button id="discbtn"class="bi bi-discord"></button>
-                </div>
-            </div>
-               
+        <div class="col2">
+            <div class="grid-box">
             
-        
+                <div class="user-box">
+                    <div class="user-info">
+                        <div class="user-img">
+                            <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-23154DF78B1C8A1DB7DC3C78FD17DDB4-Png/150/150/AvatarHeadshot/Webp/noFilter">
+                        </div>
+                        <div class="user-details">
+                            <h1>[username placeholder]</h1>
+                            <h2>ID: [placeholder]</h2>
+                           
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            
         </div>
-        
-    </div>
+
+        <div class="col3">
+            <div class="grid-box">
+                <div class="records-box">
+                    <h1 class="bi bi-search"> Viewing Logs for [user]</h1>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 </body>
 </html>
