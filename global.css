@@ -84,7 +84,7 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-input:hover, input:focus, button:hover {
+input:hover, input:focus, button:hover:enabled {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     transform: scale(1.04)
 }
@@ -108,5 +108,12 @@ label{
     font-weight: 600;
     font-size: 1rem; 
     color: rgba(255, 255, 255, 0.65);
+}
+
+button:disabled {
+    appearance: none;
+    cursor: default;
+    transition: .2s ease-in-out;
+    opacity: 65%;
 }
 
