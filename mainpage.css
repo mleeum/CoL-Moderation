@@ -61,6 +61,14 @@
     padding: 1.5rem;
 }
 
+#staffpane {
+    display: grid;
+    background-color: var(--alt-bg-color);
+    border: .2rem solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
 .log-box{
     display: grid;
     align-self: end;
@@ -101,7 +109,7 @@
 
 .staff-btn {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     margin-top: 1.5rem;
     gap: 1rem;
@@ -131,12 +139,8 @@
     border: .3rem solid var(--pos-border)   
 }
 
-#timeDisplay{
-    font-size: 2rem;
-    letter-spacing: .2rem;
-    font-weight: 400;
-    text-align: center;
-
+#timeDisplay {
+    letter-spacing: .1rem;
 }
 
 
